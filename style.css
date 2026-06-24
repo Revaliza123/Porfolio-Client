@@ -362,14 +362,22 @@ body {
     margin-bottom: 80px;
 }
 
-.client-logos {
+.platform-badge {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 8px;
     margin-bottom: 40px;
     color: #9ca3af;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.platform-badge strong {
+    color: #1dbf73;
+}
+
+.fiverr-icon {
+    flex-shrink: 0;
 }
 
 .testi-grid {
@@ -423,6 +431,17 @@ body {
     color: var(--text-muted);
 }
 
+.testi-source {
+    display: inline-block;
+    margin-top: 6px;
+    padding-left: 10px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #1dbf73;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .error-message {
     text-align: center;
     color: var(--text-muted);
@@ -467,6 +486,10 @@ body {
     }
 
     .stars {
+        padding-left: 0;
+    }
+
+    .testi-source {
         padding-left: 0;
     }
 }

@@ -182,10 +182,16 @@ function buildTestiCard(review) {
   meta.appendChild(nameEl);
   meta.appendChild(details);
 
+  // Source badge — Fiverr
+  const source = document.createElement("span");
+  source.className = "testi-source";
+  source.textContent = "via Fiverr";
+
   // Assemble
   content.appendChild(text);
   content.appendChild(stars);
   content.appendChild(meta);
+  content.appendChild(source);
   card.appendChild(img);
   card.appendChild(content);
 
