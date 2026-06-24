@@ -404,6 +404,32 @@ body {
     padding-left: 10px;
 }
 
+.testi-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 10px;
+    margin-top: 6px;
+}
+
+.testi-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-color, #1f2937);
+}
+
+.testi-details {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.error-message {
+    text-align: center;
+    color: var(--text-muted);
+    grid-column: 1 / -1;
+    padding: 2rem;
+}
+
 .mt-2 {
     margin-top: 20px;
 }
@@ -432,6 +458,15 @@ body {
 
     .testi-content p {
         border-left: none;
+        padding-left: 0;
+    }
+
+    .testi-meta {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .stars {
         padding-left: 0;
     }
 }
